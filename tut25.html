@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on selectors</title>
+    <style>
+        h1 {
+            background-color: burlywood;
+            color: brown;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* div p{
+    color:aqua;
+    font-weight:bold;
+    background-color:darkgrey;
+    /* properties set on para inside the div tag */
+
+
+        /* div li p {
+            color: blueviolet;
+            background-color: red;
+            font-weight: bold;
+            /* it affect para inside the list */
+        }
+
+        /* */ div>p {
+            /* div ke inside next element direct  p hona chaiye */
+            background-color: rgb(149, 68, 68);
+            color: cornflowerblue;
+            font-style: italic;
+        } */
+
+
+        div+p {
+            /* pichla sibling div */
+            color: cadetblue;
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> this is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p> this is another paragraph inside li</p>
+                </li>
+            </ul>
+            <p> this is paragraph</p>
+        </div>
+        <p>this is another paragraph</p>
+    </div>
+    <p> this is outermost paragraph</p>
+
+</body>
+
+</html>

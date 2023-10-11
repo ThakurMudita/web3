@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=i , initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cinzel&family=Cormorant:ital,wght@0,300;0,400;1,300&family=Heebo:wght@100&family=Lobster&family=Mukta:wght@200;300;500&family=Nabla&family=Nunito:wght@200&family=Open+Sans:wght@800&family=Poppins:wght@100&family=Qwitcher+Grypen&family=Roboto+Slab:wght@100;200;300&family=Roboto:ital,wght@0,100;0,700;1,100&family=Tilt+Prism&display=swap" rel="stylesheet">
+
+<style>
+        
+        body{
+            background-color:lightpink;
+            color:black;
+            
+        }
+        header::before{
+            /* background:url('https://source.unsplash.com/3tYZjGSBwbk')no-repeat center center/cover; */
+            background:url('https://images.unsplash.com/photo-1445264918150-66a2371142a2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8Y2l0eSxuaWdodHx8fHx8fDE2OTMwNDM0MzQ&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080');
+            content:"";
+            position:absolute;
+            width:100%;
+            height:100%;
+            z-index:-1;
+            opacity:1;
+            top:0px;
+            left:0px;
+
+        }
+        .navigation{
+            background-color:blanchedalmond;
+            color:black;
+            list-style:none;
+            display: flex;
+            /* padding:20px 10px; */
+            margin:5px;
+            border-radius:5px;
+            font-size:bold;
+            
+        }
+        li{
+            padding:20px 30px;
+        }
+h2{
+    font-size:3rem;
+}
+
+      
+          section{
+            font-family: 'Black Ops One', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Cormorant', serif;
+font-family: 'Heebo', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Mukta', sans-serif;
+font-family: 'Nabla', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+color:red;
+
+            
+            display: flex;
+            flex-direction:column;
+            margin:50px 50px;
+            align-items: center;
+            height:355px;
+            justify-content: center;
+            /* border ke inside jo content hai usko center krne ke liye justify center uses */
+          }
+          section::before{
+            content:"This is content before section"
+          }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Service</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+        <section>
+            <h2> Welcome To Coding World</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et praesentium error provident saepe,
+                mollitia reiciendis nostrum deserunt tenetur aperiam quidem, illum voluptatibus non libero ipsa
+                expedita, atque deleniti eveniet nihil animi doloremque. Sapiente facilis veritatis niquam quibusdam ad
+                quas excepturi quasi, cum, quae, sequi nulla tempore amet ratione sapiente? Nesciunt inventore nam earum
+                at obcaecati commodi!
+                Quo deleniti omnis facilis similique voluptatum, illum in doloribus ullam id aut vel deserunt quasi iure
+                illo quia ut sunt ratione laborum consequatur natus impedit quos possimus. Quas, error ipsa?
+            </p>
+        </section>
+        <hr>
+</body>
+
+</html>

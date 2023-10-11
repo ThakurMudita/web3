@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Open+Sans:wght@800&family=Roboto:wght@700&family=Tilt+Prism&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Dancing Script', cursive;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-family: 'Tilt Prism', cursive;
+
+        }
+
+        .container {
+            width: 900px;
+            border: 5px solid rgb(10, 203, 177);
+            margin: auto;
+            background-color: rgb(107, 71, 139);
+            /* margin:auto is used to move container in center */
+            /* margin-:20px auto ...this is used for changing center in y axis */
+        }
+
+        .item {
+            border: 2px solid rgb(219, 19, 19);
+            margin: 12px 3px;
+            padding: 12px 10px;
+            background: rgb(154, 189, 226);
+
+
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+        }
+
+        #stationary {
+            float: left;
+            width: 100%;
+            clear: both;
+            /*no element is floating on both side */
+            /* clear:left clear:right is used not to float element in the left and right side */
+
+        }
+
+        #glasses {
+            clear: both;
+        }
+
+        p,
+        h3 {
+            text-align: right;
+            /* overwrite then next will be cinsider as text alignment */
+            text-align: left;
+            text-align: center;
+            text-align: justify;
+
+        }
+
+        h2 {
+            
+            margin:25px auto;
+            width: 400px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>WELCOME TO MY WEBSITE</h2>
+        <div id="fruits" class="item">
+            <h3> Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, quia
+                quidem? Possimus corrupti, tempora officiis incidunt architecto fuga, excepturi accusantium rerum minus
+                iure sit ut eaque fugiat a perferendis Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti veniam enim voluptatem ex. Iste similique voluptatibus ducimus doloribus nihil qui quam magni
+                quibusdam inventore! Sit deserunt doloribus impedit corporis suscipit hic dololorem20
+                res saepe ad modi ut, eligendi corrupti fugiat officiis voluptatibus commodi consequuntur soluta? Quasi
+                voluptatem fugit deserunt neque quaerat! est!</p>
+        </div>
+        <div id="computer" class="item">
+            <h3> Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati, quia
+                quidem? Possimus corrupti, tempora officiis incidunt architecto fuga, excepturi accusantium rerum minus
+                iure sit ut eaque fugiat a perferendis est! Lsit amet consectetur adipisicing elit. Dolores ducimus
+                quisquam ipsum piciatis molestias, ad omnis officiis fugit quam! Recusandae eligendi autem dolores
+                dicta. Nam, voluptatum Lorem ipsum d Lorem ipsum dolor sit amur adipisicing elit. Aut assu
+                exercitationem. Corporis, voluptatem nobis!olor sit amet, consectetur adipisicing elit. Asperiores
+                dolores voita eaquem minima tempora repudiandae itaque soluta.amet!</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3> Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+                quia quidem? Possimus corrupti, tempora officiis incidunt architecto fuga, excepturi accusantium rerum
+                minus iure sit ut eaque fugiat a perferendis est! Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Dolorem repellat aliquam expedita distinctio necessitatibus labore sint sed eligenolores iure
+                dicta?</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3> Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati,
+                quia quidem? Possimus corrupti, tempora officiis incidunt architecto fuga, excepturi accusantium rerum
+                minus iure sit ut eaque fugiat a perferendis est! Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Dolorem repellat aliquam expedita distinctio necessitatibus labore sint sed eligenolores iure
+                dicta?</p>
+        </div>
+    </div>
+</body>
+
+</html>

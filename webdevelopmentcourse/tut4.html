@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+<center>
+
+<body>
+    <h3>REGISTRATION FORM</h3>
+    <form action="backend.php"></form>
+    <label  for="name"> Name</label>
+    <!--label tag is used when we touch the name then automatically the box of that name will be selected  always remind it when label is used then for and id of that name will be same -->
+    <div>
+         <input type="text" name="myName" id="name" >
+    </div>
+    <br>
+    <div>
+        role: <input type="text" name="myrole"> <!-- type input thhen vs code provide complete code-->
+    </div>
+    <br>
+    <div>
+        Email: <input type="text" name="myEmail">
+    </div>
+    <br>
+    <div>
+        Date: <input type="date" name="myDate">
+    </div>
+    <br>
+    <div>
+        Bonus: <input type="number" name="myBonus">
+    </div>
+    <br>
+    <div>
+        ARE YOU ELIGIBLE?: <input type="checkbox" name="myeligibility">
+    </div>
+    <br>
+    <!-- radio box is used for choose only one option in which we have same name -->
+    <div>
+        Gender: Male<input type="radio" name="myGender">  Female<input type="radio" name="myGender">  other<input type="radio" name="myGender">
+    </div>
+    <div>
+      Write about yourself: <br> <textarea name="myText" cols="30" rows="10"></textarea>
+    </div>
+    <br>
+    <!--using alt+down arrow to move the content downward -->
+    <div>
+       <input type="submit" value="Submit Now">
+    </div>
+    <div>
+        <input type="reset" value="Reset Now">
+    </div>
+    <div>
+    <label for="car">Car</label>
+        <select name="mycar" id="car">
+        <option value="ind">Indica</option>
+        <option value="swf">Swift</option>
+        </select>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <style>
+.container{
+display:grid;
+grid-gap:2px;
+grid-template-areas:'navbar navbar navbar navbar navbar navbar'
+' section section section aside aside aside '
+' footer footer footer footer footer  ';
+/* 'section section aside aside aside aside'; */
+}
+.item{
+    background-color: rgb(56, 99, 123);
+    border:2px solid red;
+    
+}
+#navbar{
+grid-area:navbar;
+}
+#section{
+grid-area:section;
+}
+#aside{
+grid-area:aside;
+}
+footer{
+    grid-area:footer;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="item"> This is navbar</div>
+        <div id="section" class="item">This is section</div>
+        <div id="aside" class="item">This is aside</div>
+        <!-- <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+        <div class="item">item-6</div>
+        <div class="item">item-7</div>
+        <div class="item">item-8</div>
+        <div class="item">item-9</div>
+        <div class="item">item-10</div>
+        <div class="item">item-11</div>
+        <div class="item">item-12</div>
+        <div class="item">item-13</div>
+        <div class="item">item-14</div> -->
+    
+        <footer class="item">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cumque voluptate pariatur maxime tenetur animi fugit architecto autem mollitia quo?
+            
+
+    
+        </footer>
+    </div>
+
+</body>
+</html>

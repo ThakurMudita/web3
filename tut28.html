@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadowa= and text box</title>
+    <style>
+        .container {
+            display: flex;
+
+        }
+
+        .card {
+            padding: 20px 30px;
+            border: 2px solid rgb(0, 255, 179);
+            margin: 10px 10px;
+            background-color: burlywood;
+            color: red;
+
+            /* box shadow:offset-x offset-y color;*/
+            /* box shadow:offset-x offset-y blur;*/
+            /* box shadow:offset-x offset-y blur spread -radius color;*/
+
+            /* box-shadow:-7px -10px; */
+            /* negative is for -ve uin x and y for changing direction */
+
+            /* box-shadow:7px 10px 6px; */
+            /* this 6px shhow how much blur radius  we can use here */
+
+            /* box-shadow:5px 10px 10px 20px; */
+            /* spread radius here in 20px */
+
+            /* box-shadow:3px 4px 2px 2px rgb(0, 132, 255,5); */
+            /* here 5 is alpha which is responsible for darkness for the color properties */
+
+
+
+            /* box-shadow:inset 10px 20px 10px 20px rgb(171, 16, 42); */
+            /* here shadow is inside the box  */
+        }
+        .card h2{
+            text-shadow:-3px -3px 2px  rgb(9, 14, 20);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="car-1">
+            <h2>card-1</h2>
+            <p> This is interesting lecture</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi assumenda veritatis eaque vel ut quo. Nobis saepe molestiae inventore deleniti?
+            </p>
+
+        </div>
+
+        <div class="card" id="car-2">
+            <h2> card-2</h2>
+            <p>This is web development course</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, unde. Sit consectetur vitae qui commodi
+                expedita earum nulla quam dolore.</p>
+        </div>
+
+        <div class="card" id="car-3">
+            <h2> card-3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, enim molestiae facere pariatur aut
+                recusandae nulla consequuntur molestias consequatur laborum?</p>
+        </div>
+    </div>
+</body>
+
+</html>

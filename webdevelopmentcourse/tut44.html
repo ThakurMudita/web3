@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and conditional</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+            <li>item-7</li>
+        </ul>
+    </div>
+    <script>
+        // var string1 ="This is string";
+        // console.log(string1);
+        // // here b is globally defined
+        // let b="so";
+        // {
+        //    let b="two";
+        //     // local variable
+        //     console.log(b);
+        // }
+        // console.log(b);
+        // // let is locally defined 
+
+        // const a="This can't be changed";
+        // console.log(a);
+
+        let age=2;
+        if(age>18){
+            console.log("do what you want");
+        }
+        else if(age==2){
+            console.log("AGE IS 2");
+        }
+        else{
+            console.log("having restriction");
+        }
+        const dress=4;
+        switch (dress) {
+            case 1:
+                console.log('No. of dress=1')
+                break;
+            case 2:
+                console.log('No. of dress=2')
+                break;
+            case 3:
+                console.log('No. of dress=3')
+                break;
+            case 4:
+                console.log('No. of dress=4')
+                break;
+            case 5:
+                console.log('No. of dress=5')
+                break;
+        
+            default:
+                console.log('invalid choice');
+                break;
+        }
+    </script>
+</body>
+</html>

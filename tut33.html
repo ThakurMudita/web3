@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transform</title>
+</head>
+<style>
+    *{
+        margin:0px;
+        padding:0px;
+    }
+.box{
+    background-color:red;
+    border:2px solid rgba(223, 9, 223, 0.867);
+    height:250px;
+    width:250px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size: 35px;
+    font-style:oblique;
+    transition: all 5s ease-in-out .3s;
+}
+.container{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: pink;
+    
+}
+.box:hover{
+    transform:rotate(360deg);
+
+    /* in scale size is double or triple as per our demand */
+    transform:scale(2);
+
+    /* move in x and y */
+    transform:translateX(123px);
+    transform:translateY(90px);
+    transform:translate(123px 90px);
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">This is a box</div>
+    </div>
+
+
+</body>
+</html>

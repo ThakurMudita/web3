@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        css grid
+    </title>
+</head>
+<style>
+    .grid{
+        background-color: yellow;
+display:grid;
+grid-template-rows: 1fr 1fr 3fr;
+/* rest will be used by auto */
+grid-auto-rows:2fr;
+grid-template-columns: 1fr 1fr ;
+grid-template-columns:repeat(5,2fr);
+grid-gap:3rem;
+justify-content:space-evenly;
+
+    }
+    .box{
+        background-color: cadetblue;
+        border:2px solid rgb(208, 19, 51);
+
+    }
+</style>
+<body>
+    <div class="grid">
+        <div class="box">T his is css grid box-1</div>
+        <div class="box">T his is css grid box-2</div>
+        <div class="box">T his is css grid box-3</div>
+        <div class="box">T his is css grid box-4</div>
+        <div class="box">T his is css grid box-5</div>
+        <div class="box">T his is css grid box-6</div>
+        <div class="box">T his is css grid box-7</div>
+        <div class="box">T his is css grid box-8</div>
+        <div class="box">T his is css grid box-9</div>
+        <div class="box">T his is css grid box-10</div>
+    </div>
+</body>
+</html>
